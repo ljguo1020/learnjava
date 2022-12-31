@@ -1,0 +1,31 @@
+.
+├── list.txt
+├── pom.xml
+├── spring-mvc.iml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── ljguo
+    │   │           ├── config
+    │   │           │   ├── ServletContainersInitConfig.java
+    │   │           │   ├── SpringConfig.java
+    │   │           │   └── SpringMvcConfig.java
+    │   │           ├── controller
+    │   │           │   ├── BookController.java
+    │   │           │   └── UserController.java
+    │   │           └── pojo
+    │   │               ├── Address.java
+    │   │               └── User.java
+    │   ├── resources
+    │   └── webapp
+    │       ├── WEB-INF
+    │       ├── index.html
+    │       └── index.jsp
+    └── test
+        ├── java
+        └── resources
+/a [error opening dir]
+/f [error opening dir]
+
+14 directories, 12 files
