@@ -2,15 +2,13 @@ package com.ljguo.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
-import org.springframework.stereotype.Controller;
+import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.PropertySource;
+
 
 @Configuration
-@ComponentScan(value = "com.ljguo",
-        excludeFilters = @ComponentScan.Filter(
-        type = FilterType.ANNOTATION,
-        classes = Controller.class
-    )
-)
+@ComponentScan({"com.ljguo.service"})
+@PropertySource("classpath:jdbc.properties")
+@Import({JdbcConfig.class,MybatisConfig.class})
 public class SpringConfig {
 }
